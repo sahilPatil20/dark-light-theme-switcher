@@ -7,3 +7,11 @@
     cursor: pointer;
 }
 
+.main-img {
+    width: 100%;
+}
+
+.img-madrid {
+    width: 70%;
+    height: 500px;
+}
