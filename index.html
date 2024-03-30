@@ -15,14 +15,38 @@
             <span>Real Madrid</span>
         </div>
         <div>
-            <img src="./img/light.png" alt="light-mode" class="mode me-2 mt-3 p-1">
-            <img src="./img/dark.png" alt="dark-mode" class="mode me-5 mt-3 p-1">
+            <img src="./img/light.png" alt="light-mode" class="mode me-2 mt-3 p-2 bg-white" id="img-light" onclick="lightMode()">
+            <img src="./img/dark.png" alt="dark-mode" class="mode me-5 mt-3 p-2 bg-white" id="img-dark" onclick="darkMode()">
         </div>
-
     </div>
     
 
 
+    <script>
+        function darkMode() {
+            const imgDark = document.getElementById("img-dark");
+            imgDark.classList.add("border");
+            imgDark.classList.add("border-black");
+            imgDark.classList.add("rounded-3");
+
+            const imgLight = document.getElementById("img-light");
+            imgLight.classList.remove("border");
+            imgLight.classList.remove("border-black");
+            imgLight.classList.remove("rounded-3");
+        }
+
+        function lightMode() {
+            const imgLight = document.getElementById("img-light");
+            imgLight.classList.add("border");
+            imgLight.classList.add("border-black");
+            imgLight.classList.add("rounded-3");
+
+            const imgDark = document.getElementById("img-dark");
+            imgDark.classList.remove("border");
+            imgDark.classList.remove("border-black");
+            imgDark.classList.remove("rounded-3");
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
